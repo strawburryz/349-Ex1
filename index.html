@@ -6,10 +6,53 @@
     <title>Victoria Parry</title>
 </head>
 <body>
-    <header>I am Victoria</header>
-    <a href="recipes.html">Recipes</a>
-    <a href="mydogs.html">Puppies</a>
-    <a href= # >Music</a>
-    <a href="whales.html">Whales</a>
+    <h1>
+        I am Victoria
+        <audio controls>
+            <source src="minions_hello.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+        </audio> 
+    </h1>
+
+    <nav>
+        <ul>
+            <li><a href="my_foods/food.html">Food</a></li>
+            <li><a href="mydogs.html">Puppies</a></li>
+            <li><a href="music.html">Music</a></li>
+            <li><a href="whales.html">Whales</a></li>
+        </ul>
+    </nav>
+    
+
+    <br>
+    <button type="button">Click Me To Say Hi Back!</button> 
+
+    <section>
+        <h3>Want to Contact Me?</h3>
+        <p>Input your email and message so I can get back to you.</p>    
+        <form action="#">
+            <div>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            
+            <div>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+            </div>
+        
+            <div>
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+    </section>
+        
+    
+
 </body>
 </html>

@@ -1,80 +1,68 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
 body {
-    background: #c380a1;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	line-height: 1.6;
+	margin: 0;
+	min-height: 100vh;
 }
-
-.navbar {
-    display: flex;
-    background-color: beige;
-    color: #c380a1;
-    flex-direction: column;
-    padding: 20px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-}
-
 ul {
-    list-style: none;
-    display: flex;
-    justify-content: flex-end; /* Aligns the list items to the right */
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
-li {
-    align-items: center;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-weight: bold;
-}
-
-a {
+a{
+    color: #6daffe;
     text-decoration: none;
-    color: #c380a1;
-}
-
-li:not(:last-child) {
-    margin-right: 20px;
-}
-
-.buttonparent {
+    background-color: beige;
     display: flex;
-    align-items: center; 
-    justify-content: center; 
+    justify-content: space-around;
 }
 
-.button{
+.namelogo{
+    margin: none;
+    padding-left: 15px;
+    text-transform: uppercase;
+    color: #6daffe;
     display: flex;
-    align-items: center;
     justify-content: center;
-    background-color: plum;
-    border-radius: 50%;
-    border-style:dotted;
-    color: beige;
-    padding: 30px;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    transition: transform 0.3s ease 0.5s;
 }
 
-.button:hover{
-    transform: translate(500px, 500px);
-}
-
-.image-container {
+.navlinks{
+    margin-top: 5px;
     display: flex;
-    flex-wrap: wrap;  /* Allow items to wrap onto the next line */
-    gap: 10px;  /* Gap between figures */
-    color: beige;
+    flex-wrap: wrap;
+    flex-direction:column;
 }
 
-figure {
-    margin: 0;
-    flex: 1 1 200px; /* This allows the figure to grow and shrink but not go below 200px width */
+.namelogo a, .navlinks a{
+    padding: 10px 15px;
+	text-transform: uppercase;
+	text-align: center;
+	display: flex;
 }
 
-figure img {
+.navlinks a:hover{
+    color: #457cbe;
+}
+
+#iframecontainer{
+    display: flex;
+    justify-content: center;
+}
+
+#iframewhale{
+    border: none;
     width: 100%;
-    height: auto;
-    display: block;
+    height: 300px;
+}
+
+@media screen and (min-width: 850px) {
+    .navlinks{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    a{
+        border-radius: 15%;
+    }
 }

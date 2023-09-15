@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #c380a1;
+}
+
+.navbar {
+    display: flex;
+    background-color: beige;
+    color: #c380a1;
+    flex-direction: column;
+    padding: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end; /* Aligns the list items to the right */
+}
+
+li {
+    align-items: center;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+    color: #c380a1;
+}
+
+li:not(:last-child) {
+    margin-right: 20px;
+}
+
+.buttonparent {
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+}
+
+.button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: plum;
+    border-radius: 50%;
+    border-style:dotted;
+    color: beige;
+    padding: 30px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    transition: transform 0.3s ease 0.5s;
+}
+
+.button:hover{
+    transform: translate(500px, 500px);
+}
+
+.image-container {
+    display: flex;
+    flex-wrap: wrap;  /* Allow items to wrap onto the next line */
+    gap: 10px;  /* Gap between figures */
+    color: beige;
+}
+
+figure {
+    margin: 0;
+    flex: 1 1 200px; /* This allows the figure to grow and shrink but not go below 200px width */
+}
+
+figure img {
+    width: 100%;
+    height: auto;
+    display: block;
+}

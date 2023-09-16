@@ -149,6 +149,7 @@ figure img{
     flex-direction: column;
     align-items: center;
     width: 100%;
+    color: rgba(68, 63, 63, 0.829);
 }
 
 .recipe-row {
@@ -181,7 +182,7 @@ figure img{
 
 }
 
-@media (max-width: 600px) {
+@media (max-width: 400px) {
     figure img {
         max-width: 300px;
         max-height: 300px; 
